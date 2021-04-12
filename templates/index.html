@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            h1{text-align: center;}
+            .form{text-align: center;}
+            .center {margin-left: auto; margin-right: auto;}
+            table, th, td {
+                            border: 1px solid black;
+                            border-collapse: collapse;
+                            }
+            th, td {
+                        padding: 15px;
+                    }
+            .me{text-align: center;}
+            .m{margin-left: 30px;}
+        </style>
+        <title>Test</title>
+    </head>
+    <body>
+        <h1>Covid Stats</h1>
+        <center><img src="{{url_for('static' , filename=file) }}"style="width: 800px; height: 320px "></center>
+        <form action="/" class="form" method="post">
+           
+            <select name="country" id="country">
+                <option id=Total>Total</option>
+                <option id=Andaman and Nicobar Islands>Andaman and Nicobar Islands</option>
+                <option id=Andhra Pradesh>Andhra Pradesh</option>
+                <option id=Arunachal Pradesh>Arunachal Pradesh</option>
+                <option id=Assam>Assam</option>
+                <option id=Bihar>Bihar</option>
+                <option id=Chandigarh>Chandigarh</option>
+                <option id=Chhattisgarh>Chhattisgarh</option>
+                <option id=Dadra and Nagar Haveli and Daman and Diu >Dadra and Nagar Haveli and Daman and Diu </option>
+                <option id=Delhi>Delhi</option>
+                <option id=Goa>Goa</option>
+                <option id=Gujarat>Gujarat</option>
+                <option id=Haryana>Haryana</option>
+                <option id=Himachal Pradesh>Himachal Pradesh</option>
+                <option id=Jammu and Kashmir>Jammu and Kashmir</option>
+                <option id=Jharkhand>Jharkhand</option>
+                <option id=Karnataka>Karnataka</option>
+                <option id=Kerala>Kerala</option>
+                <option id=Ladakh >Ladakh </option>
+                <option id=Lakshadweep>Lakshadweep</option>
+                <option id=Madhya Pradesh>Madhya Pradesh</option>
+                <option id=Maharashtra >Maharashtra </option>
+                <option id=Manipur>Manipur</option>
+                <option id=Meghalaya >Meghalaya </option>
+                <option id=Mizoram>Mizoram</option>
+                <option id=Nagaland>Nagaland</option>
+                <option id=Odisha>Odisha</option>
+                <option id=Puducherry>Puducherry</option>
+                <option id=Punjab>Punjab</option>
+                <option id=Rajasthan>Rajasthan</option>
+                <option id=Sikkim>Sikkim</option>
+                <option id=Tamil Nadu>Tamil Nadu</option>
+                <option id=Telengana>Telengana</option>
+                <option id=Tripura>Tripura</option>
+                <option id=Uttarakhand>Uttarakhand</option>
+                <option id=Uttar Pradesh>Uttar Pradesh</option>
+                <option id=West Bengal>West Bengal</option>
+            </select>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+        <br>
+        <center>{{statement}}</center>
+
+        <table class = "center">
+                <tr>
+                    <th>Confirmed</th>
+                    <th>Cured</th>
+                    <th>Death</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>{{confirm}}</td>
+                    <td>{{cured}}</td>
+                    <td>{{death}}</td>
+                    <td>{{total}}</td>
+                </tr>
+        </table>
+        <br>
+        <div class="m">
+            <b><i><u style="font-size:20px">Developed and Deployed by:</u></i></b>
+            <b style="font-size:20px">&nbsp;Gautam Manocha</b><br><br>
+            <i style="font-size:18px">Connect with me on</i><br><br>
+            <a href="https://github.com/26-lion" class="fa fa-github-square" style="font-size:24px; color: black"> </a>  &nbsp;
+            <a href="https://www.linkedin.com/in/gautam-manocha-7698991a8/"class="fa fa-linkedin-square" style="font-size:24px; color: black;"> </a> &nbsp;
+            <a href="mailto:manochagautam@yahoo.com" class="fa fa-envelope" style="font-size:24px; color:black;"></a>
+            <br><br>
+            Code for the website can be found <a href="https://github.com/26-lion/CovidTracker"> here</a>
+        </div>
+
+       
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
