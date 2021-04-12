@@ -37,5 +37,5 @@ def index():
 		return render_template("index.html", data=data, file="corona.jpg", confirm="", cured="", death="", total="", statement="Please Select a State/Union Territory")
 
 if __name__ == "__main__" :
-	app.run(debug=True, host="192.168.1.122")
+	app.run(debug=True)
 
